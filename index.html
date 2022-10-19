@@ -15,5 +15,23 @@
    }
    var a = new Book
    var b = new Book()
+   b.title = "backend Programming"
+   b.price = 175.0
+   b.writer = "James Bond"
    console.log(b)
+
+   class Coffee {
+   name = ""
+   price = 0
+   getSpecialPrice() {
+      return this.price * 0.90
+      }
+   }
+
+   var c = new Coffee()
+   c.name = "Latte"
+   c.price = 80.0
+   var t = c.getSpecialPrice()
+   console.log(c)
+   console.log(t)      // 72.0
 </script>
