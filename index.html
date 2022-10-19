@@ -34,4 +34,35 @@
    var t = c.getSpecialPrice()
    console.log(c)
    console.log(t)      // 72.0
+
+   // Your task is to write a class shirt
+   // with two fields: size and price
+   // and one method: getSpecialPrice()
+   // but discount by size of Shirt
+   // "S" ----> discount by 3% (0.97)
+   // "M" ----> discount by 5% (0.95)
+   // "L" ----> discount by 7% (0.93)
+   // otherwise no discount
+   class Shirt {
+      size = ""
+      price = 0
+
+    discount() {
+       if (ss.size == "S") {
+          return ss.price * 0.97
+       } else if (ss.size == "M") {
+          return ss.price * 0.95
+       } else if (ss.size == "L") {
+          return ss.price * 0.93
+       } else {
+          return "There is only size S, M, L"
+       }
+     }
+   }
+   var ss = new Shirt()
+   ss.size = prompt("Enter size")
+   ss.price = +prompt("Enter pirce")
+   var rs = ss.discount()
+   
+   alert(rs)
 </script>
